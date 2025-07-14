@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* General Styles */
+.cartMainSection {
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+.basicHeadings > h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.basicHeadings > .seperatingLine {
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    margin: 10px 0;
+}
+
+.group1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.group1 > svg {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contentSection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Left Content */
+.cardsSection {
+    margin-top: 20px;
+    padding: 0 10px; /* added padding to prevent touching screen edges */
+}
+
+.FoodItemCard {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1a1a1a;
+    box-sizing: border-box;
+}
+
+.innerFoodItemCard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.innerFoodItemCard > .leftCard {
+    width: 15%;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.innerFoodItemCard > .leftCard > img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.innerFoodItemCard > .MiddleCard {
+    flex: 1;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.innerFoodItemCard > .MiddleCard > strong {
+    font-size: 1.2em;
+}
+
+.innerFoodItemCard > .rightCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.cartOptions {
+    color: white;
+    cursor: pointer;
+}
+
+.cartOptions:hover {
+    color: #ff5c5c;
+}
+
+.editingCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.editingCart svg {
+    cursor: pointer;
+    color: white;
+}
+
+.checkOut {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #CC0000;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.checkOut:hover {
+    background-color: #CC0000;
+}
+
+/* Right Checkout Form */
+.paymentFormSection {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.paymentMethodSelect {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.paymentMethodSelect label {
+    display: flex;
+    margin: 0 60px 0 0;
+}
+
+.paymentMethodSelect label input {
+    flex: 1;
+    width: 20px;
+}
+
+.paymentFormInput {
+    margin-bottom: 15px;
+}
+
+.paymentFormInput label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.paymentFormInput input {
+    width: 95%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Styles */
+
+/* ≤ 768px */
+@media (max-width: 768px) {
+    .cartMainSection {
+        padding: 20px 10px;
+    }
+
+    .basicHeadings > h3 {
+        font-size: 1.3em;
+    }
+
+    .innerFoodItemCard .MiddleCard {
+        font-size: 0.9em;
+    }
+
+    .checkOut {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .paymentFormSection {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .paymentMethodSelect {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .paymentMethodSelect label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .paymentFormInput input {
+        width: 90%;
+    }
+}
+
+/* ≤ 700px */
+@media (max-width: 700px) {
+    .checkOut {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .paymentFormSection {
+        width: 50%;
+    }
+}
+
+/* ≤ 350px */
+@media (max-width: 350px) {
+    .cartMainSection {
+        padding: 10px;
+    }
+
+    .basicHeadings > h3 {
+        font-size: 1em;
+    }
+
+    .group1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardsSection {
+        padding: 0 8px;
+    }
+
+    .FoodItemCard {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .innerFoodItemCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .innerFoodItemCard .leftCard img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .innerFoodItemCard .MiddleCard {
+        font-size: 0.9em;
+    }
+
+    .checkOut {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .paymentFormSection {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .paymentFormInput input {
+        width: 85%;
+    }
+}
+
+/* ≤ 290px */
+@media (max-width: 290px) {
+    .cartMainSection {
+        padding: 8px;
+    }
+
+    .basicHeadings > h3 {
+        font-size: 0.9em;
+    }
+
+    .cardsSection {
+        padding: 0 6px;
+    }
+
+    .FoodItemCard {
+        margin: 5px 0;
+    }
+
+    .innerFoodItemCard .leftCard img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .checkOut {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+
+    .paymentFormSection {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .paymentFormInput input {
+        width: 80%;
+    }
+}
+
+/* ≤ 250px */
+@media (max-width: 250px) {
+    .cartMainSection {
+        padding: 5px;
+    }
+
+    .cardsSection {
+        padding: 0 5px;
+    }
+
+    .basicHeadings > h3 {
+        font-size: 0.8em;
+    }
+
+    .FoodItemCard {
+        padding: 8px;
+    }
+
+    .innerFoodItemCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .innerFoodItemCard .leftCard img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .innerFoodItemCard .MiddleCard {
+        font-size: 0.8em;
+        padding: 5px 0;
+    }
+
+    .innerFoodItemCard .rightCard {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .editingCart {
+        gap: 6px;
+    }
+
+    .editingCart svg {
+        width: 20px;
+    }
+
+    .cartOptions {
+        width: 20px;
+    }
+
+    .paymentFormSection {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .paymentMethodSelect label {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+
+    .paymentFormInput label {
+        font-size: 0.8em;
+    }
+
+    .paymentFormInput input {
+        width: 100%;
+        padding: 6px;
+        font-size: 0.8em;
+    }
+
+    .checkOut {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+}
+
+
+/*-------------------------------right side box section--------*/
+.cartSummaryBox {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  color: #f5f5f5;
+  font-size: 0.95em;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.totalRow {
+  font-size: 1.05em;
+  color: #fff;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+
+/*-----------------------------------loading page--------------------------*/
+.paymentLoadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 6px solid #CC0000;;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

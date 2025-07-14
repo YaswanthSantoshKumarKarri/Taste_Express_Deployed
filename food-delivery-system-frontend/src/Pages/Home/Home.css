@@ -1,0 +1,372 @@
+/* ========== Home Section ========== */
+.HomeMainOuterSection {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.IntroHomeSection {
+  background-image: url("./../../Assets/HomePageImages/HomePic.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 180vh;
+  padding: 0 2vw;
+  position: relative;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  
+}
+
+.IntroHomeSection > h1 {
+  padding-top: 55vh;
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.IntroHomeSection > p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.IntroBtns {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  flex-wrap: wrap;
+}
+
+.IntroBtns > button:nth-child(1) {
+  border: 2px solid #cc0000;
+  background-color: #bd0000;
+}
+
+.IntroBtns > button:nth-child(1):hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+/* ========== BasicDetailsSec Section ========== */
+.basicDetailsSection {
+  position: relative;
+  margin-top: 5vh;
+}
+
+.basicDetailsCircleSection {
+  display: flex;
+  justify-content: center;
+}
+
+.basicDetailsCircleSection .circleImage {
+  position: absolute;
+  top: -67vh;
+  width: 45%;
+  z-index: 1;
+}
+
+.basicDetailsCardSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  margin-top: 5vh;
+  position: relative;
+  z-index: 2;
+}
+
+.basicInfoCard {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardInnerSection {
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  background-color: white;
+  overflow: hidden;
+}
+
+.cardInnerSection img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cardH1tag {
+  color: red;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.cardInnerSection p {
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+/* ========== View Menu Section ========== */
+.basicViewMenuSection {
+  margin-top: 15vh;
+  color: white;
+  background-image: url("../../Assets/HomePageImages/FullMenuItems.png");
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(rgba(117, 117, 117, 0.2), #000);
+  height: 103vh;
+  display: flex;
+  align-items: center;
+}
+
+.basicViewInnerSection {
+  padding: 50px;
+}
+
+.basicViewInnerSection > .h1basicViewInnerSection {
+  font-size: 100px;
+}
+
+.basicViewInnerSection > button {
+  margin-top: 20px;
+  padding: 20px 50px;
+}
+
+/* ========== Deals Section ========== */
+.DealsOuterSection {
+  padding: 0 50px;
+  margin-top: 10vh;
+}
+
+.headingAndViewBtn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.headingAndViewBtn > .dealsH1Tag {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.headingAndViewBtn > .dealsViewAllBtn {
+  text-align: right;
+  width: 75%;
+}
+
+.headingAndViewBtn > .dealsViewAllBtn > button {
+  border-color: #cc0000;
+  color: #cc0000;
+  height: 10vh;
+}
+
+.headingAndViewBtn > .dealsViewAllBtn > button:hover {
+  color: white;
+}
+
+.mainOffersSection {
+  height: 150vh;
+  width: 100%;
+}
+
+.mainOffersSection > .grandOffer {
+  width: 100%;
+  height: 40%;
+  border-radius: 45px;
+  display: flex;
+  background: linear-gradient(to right, white, #ff0000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.grandOffer > h1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 100px;
+  height: 100px;
+  top: 460vh;
+  left: 10vh;
+  padding: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.grandOffer > .rightGrandOffer {
+  padding: 50px;
+  width: 60.9%;
+  height: 100%;
+}
+
+.rightGrandOffer > h4 {
+  font-family: "Anton", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.rightGrandOffer > h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.rightGrandOffer > p {
+  font-weight: 500;
+}
+
+.miniSubOffers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miniOffer {
+  display: flex;
+  width: 48%;
+  height: fit-content;
+  margin-top: 50px;
+  background: linear-gradient(to right, white, #ff0000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+}
+
+.miniOffer:nth-child(2) {
+  margin-left: 4%;
+}
+
+.miniOffer > .miniOfferH11,
+.miniOfferH12 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.miniOffer > .rightGrandOffer {
+  padding: 20px;
+}
+
+/* ========== Media Queries ========== */
+
+/* Screens below 700px */
+@media (max-width: 700px) {
+  .IntroHomeSection {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 2vw;
+    border-bottom-left-radius: 30% 15%;
+    border-bottom-right-radius: 30% 15%;
+  }
+
+  .IntroHomeSection > h1 {
+    padding-top: 0;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .IntroHomeSection > p {
+    font-size: 18px;
+  }
+
+  .IntroBtns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .IntroBtns > button {
+    width: 70%;
+  }
+
+  .basicDetailsCircleSection .circleImage {
+    top: -47vh;
+    width: 55%;
+  }
+
+  .basicDetailsCardSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .basicViewInnerSection > .h1basicViewInnerSection {
+    font-size: 60px;
+  }
+
+  .miniOffer {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+
+/* Screens below 500px */
+@media (max-width: 500px) {
+  .IntroHomeSection > h1 {
+    font-size: 40px;
+  }
+
+  .IntroHomeSection > p {
+    font-size: 16px;
+  }
+
+  .cardInnerSection {
+    padding: 15px;
+  }
+
+  .cardInnerSection p {
+    font-size: 14px;
+  }
+
+  .basicViewInnerSection > .h1basicViewInnerSection {
+    font-size: 50px;
+  }
+
+  .basicDetailsCircleSection .circleImage {
+    top:-37vh;
+    width: 65%;
+  }
+}
+
+/* Screens below 300px */
+@media (max-width: 300px) {
+  .IntroHomeSection > h1 {
+    font-size: 28px;
+  }
+
+  .IntroHomeSection > p {
+    font-size: 14px;
+  }
+
+  .IntroBtns > button {
+    width: 90%;
+  }
+
+  .basicViewInnerSection > .h1basicViewInnerSection {
+    font-size: 40px;
+  }
+
+  .basicDetailsCircleSection .circleImage {
+    top:-27vh;
+    width: 80%;
+  }
+}
