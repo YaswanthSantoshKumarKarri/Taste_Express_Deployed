@@ -1,0 +1,309 @@
+.MainFooter {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px 0px;
+    cursor: default;
+}
+
+/* Upper Content Layout */
+.upperContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Center Alignment */
+.CenterContent {
+    display: block;
+    text-align: center;
+}
+
+/* Logo */
+.Footerlogo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 7vh;
+    font-weight: 500;
+}
+
+.FooterQuote {
+    font-family: 'Courier New', monospace;
+    color: grey;
+}
+
+/* Footer Lists */
+.FooterList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.FooterList .oneTwo,
+.FooterList .threeFour {
+    padding: 10px 0;
+    color: grey;
+}
+
+.FooterList ul li {
+    margin: 8px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.FooterList ul li:hover {
+    color: #CC0000;
+}
+
+.FooterList ul li:first-child {
+    color: #fff;
+    cursor: default;
+}
+
+/* Underlines */
+.underLine,
+.underLine1 {
+    background-color: red;
+    width: 70px;
+    height: 1px;
+    margin: 6px auto;
+}
+
+/* Get In Touch */
+.GetInTouch .heading {
+    margin-top: 2vh;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+}
+
+.socialMedialLinks ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+    width: 100px;
+    margin-inline: auto;
+}
+
+.socialMedialLinks ul li {
+    width: 24px;
+    height: 24px;
+    background-color: grey;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialMedialLinks ul li:hover {
+    background-color: #CC0000;
+}
+
+.socialMedialLinks svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+/* Lower Content */
+.lowerContent {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.lowerContent .seperator {
+    background-color: #fff;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto 1vh auto;
+}
+
+.lowerContent .copyrights {
+    color: grey;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.lowerContent .copyrights svg {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/* ========================= Media Queries ========================= */
+
+/* ≤ 700px */
+@media (max-width: 700px) {
+    .upperContent {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .FooterList {
+        grid-template-columns: 1fr;
+    }
+
+    .Footerlogo {
+        font-size: 5.5vh;
+    }
+
+    .FooterList ul li {
+        font-size: 14px;
+    }
+
+    .socialMedialLinks ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .GetInTouch .heading {
+        font-size: 16px;
+    }
+}
+
+/* ≤ 500px */
+@media (max-width: 500px) {
+    .upperContent {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .FooterList {
+        grid-template-columns: 1fr;
+    }
+
+    .Footerlogo {
+        font-size: 4.5vh;
+    }
+
+    .FooterQuote {
+        font-size: 14px;
+    }
+
+    .FooterList ul li {
+        font-size: 13px;
+    }
+
+    .underLine,
+    .underLine1 {
+        width: 60px;
+    }
+
+    .socialMedialLinks ul {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100px;
+    }
+
+    .socialMedialLinks ul li {
+        width: 20px;
+        height: 20px;
+        padding: 4px;
+    }
+
+    .GetInTouch .heading {
+        font-size: 15px;
+    }
+
+    .copyrights {
+        font-size: 12px;
+    }
+
+    .copyrights svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* ≤ 300px */
+@media (max-width: 300px) {
+    .Footerlogo {
+        font-size: 3.5vh;
+    }
+
+    .FooterQuote {
+        font-size: 13px;
+    }
+
+    .FooterList ul li {
+        font-size: 12px;
+    }
+
+    .underLine,
+    .underLine1 {
+        width: 50px;
+    }
+
+    .socialMedialLinks ul {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100px;
+    }
+
+    .socialMedialLinks ul li {
+        width: 18px;
+        height: 18px;
+        padding: 3px;
+    }
+
+    .GetInTouch .heading {
+        font-size: 14px;
+    }
+
+    .copyrights {
+        font-size: 10px;
+    }
+
+    .copyrights svg {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* ≤ 250px */
+@media (max-width: 250px) {
+    .Footerlogo {
+        font-size: 3vh;
+    }
+
+    .FooterQuote {
+        font-size: 12px;
+    }
+
+    .FooterList ul li {
+        font-size: 11px;
+    }
+
+    .underLine,
+    .underLine1 {
+        width: 40px;
+    }
+
+    .socialMedialLinks ul {
+        grid-template-columns: 1fr;
+        width: 50px;
+    }
+
+    .socialMedialLinks ul li {
+        width: 16px;
+        height: 16px;
+        padding: 2px;
+    }
+
+    .GetInTouch .heading {
+        font-size: 13px;
+    }
+
+    .copyrights {
+        font-size: 9px;
+        flex-direction: column;
+    }
+
+    .copyrights svg {
+        width: 8px;
+        height: 8px;
+    }
+}

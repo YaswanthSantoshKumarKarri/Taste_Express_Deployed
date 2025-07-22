@@ -1,0 +1,254 @@
+.NavBarOuterMainSection {
+  width: auto;
+  height: 18vh;
+  padding: 35px 50px 0 50px;
+  background-color: black;
+}
+
+.NavBarInnerMainSection {
+  width: 98.5%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftNavBarSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.leftNavBarSection > div {
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+.DetailsVal{
+    visibility: none;
+    opacity: 0;
+    color: #fff;
+    cursor: pointer;
+    width: 0;
+    transition: .8s;
+}
+.MailDetails:Hover>.DetailsVal{
+  opacity: 1;
+  transform: translateY(-15px);
+}
+.PhoneDetails:hover>.DetailsVal{
+  opacity: 1;
+  transform: translateY(-15px);
+}
+.MessageDetails:hover>.DetailsVal{
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.MailDetails:Hover>svg{
+  opacity: 1;
+  transform: translateY(-5px);
+  color: #CC0000;
+}
+.PhoneDetails:hover>svg{
+  opacity: 1;
+  transform: translateY(-5px);
+  color: #CC0000;
+
+}
+.MessageDetails:hover>svg{
+  opacity: 1;
+  transform: translateY(-5px);
+  color: #CC0000;
+}
+
+.middleNavBarSection {
+  flex: 2;
+  text-align: center;
+  color: white;
+}
+
+.middleNavBarSection > .LogoTitle {
+  margin-bottom: 40px;
+  color: #CC0000;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.middleNavBarSection > .NavBarList > ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.middleNavBarSection > .NavBarList > ul > li {
+  margin: 0 10px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap; /* ⬅ prevents "OUR MENU" from breaking into 2 lines */
+}
+
+.navLink > div{
+  display: flex;
+}
+.navLink > div:hover{
+  color: #cc0000;
+}
+.navLink > div>svg{
+  padding: 0 2px;
+}
+.navLink > div:hover>svg{
+  color: #cc0000;
+}
+.navLink > div > div{
+  text-align: center;
+  font-size: 15px;
+}
+
+.rightNavBarSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50px;
+}
+
+.rightNavBarSection button {
+  background-color: transparent;
+  border: 2px solid #CC0000;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rightNavBarSection button:hover {
+  background-color: #CC0000;
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+/* For screens <= 1024px */
+@media (max-width: 1024px) {
+  .leftNavBarSection,
+  .rightNavBarSection {
+    display: none;
+  }
+
+  .NavBarInnerMainSection {
+    justify-content: center;
+  }
+
+  .middleNavBarSection > .NavBarList > ul {
+    justify-content: center;
+  }
+}
+
+/* For screens <= 768px */
+@media (max-width: 768px) {
+  .NavBarInnerMainSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middleNavBarSection > .LogoTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+/* 
+  .middleNavBarSection > .NavBarList > ul {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .middleNavBarSection > .NavBarList > ul > li {
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens <= 600px */
+@media (max-width: 600px) {
+  .NavBarOuterMainSection {
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .middleNavBarSection > .LogoTitle {
+    font-size: 18px;
+  }
+
+  .middleNavBarSection > .NavBarList > ul > li {
+    font-size: 13px;
+  }
+
+  .navLink {
+    font-size: 13px;
+  }
+}
+
+
+/* For screens <= 400px */
+@media (max-width: 400px) {
+  .NavBarOuterMainSection {
+    padding: 15px 20px;
+  }
+
+  .middleNavBarSection > .LogoTitle {
+    font-size: 16px;
+  }
+  .NavBarList{
+    margin-top: 5%;
+  }
+  .middleNavBarSection > .NavBarList > ul > li {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .navLink {
+    font-size: 12px;
+  }
+
+  .rightNavBarSection button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .navLink>div>div{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    width: 0;
+    transition: .8s;
+  }
+  .HomeDetails:active >.HomeDetailsVal {
+    display: block;
+    transform: translate(-25px,-15px);
+  }
+  .OurMenuDetails:active >.OurMenuDetailsVal {
+    display: block;
+    transform: translate(-25px,-15px);
+  }
+  .AboutUsDetails:active >.AboutUsDetailsVal {
+    display: block;
+    transform: translate(-25px,-15px);
+  }
+  .CartDetails:active >.CartDetailsVal {
+    display: block;
+    transform: translate(-25px,-15px);
+  }
+  .DashBoardDetails:active >.DashBoardDetailsVal {
+    display: block;
+    transform: translate(-35px,-15px);
+  }
+}
